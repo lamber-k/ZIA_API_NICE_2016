@@ -1,6 +1,8 @@
 #ifndef		ZIA_ICORE
 # define	ZIA_ICORE
 
+# include		"zia_registration.hh"
+
 /*
 ** Namespace for every Zia API Classes
 */
@@ -39,10 +41,12 @@ namespace	zia
 ** 
 ** register_request_state()
 ** Register a function to a specific state.
-** You can also define a priority level to take it.
+** You can also define a priority level to know if your function will be called.
+** By default, priority is MIDDLE.
+** see also: zia_registration.hh
 **
 */
-		virtual void	register_request_state(zia::request_handler &); // zia::request_state, zia::registration_priority
+		virtual void	register_request_state(zia::request_handler &, zia::request_state, zia::registration_priority = zia::MIDDLE);
 
 	};
 }
