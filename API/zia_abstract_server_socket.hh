@@ -5,15 +5,15 @@
 
 namespace zia
 {
-	typedef void	(*acceptor_handler)(const abstract_socket *);
+    typedef void	(*acceptor_handler)(const abstract_socket *);
 
-	class abstract_server_socket
-	{
+    class abstract_server_socket
+    {
 	public:
-		virtual			~abstract_server_socket();
+	virtual			~abstract_server_socket();
 
-		virtual void	register_acceptor_handler(const abstract_socket *) = 0;
-	};
+	virtual void	register_acceptor_handler(const abstract_socket *) = 0;
+    };
 }
 
 #endif // !ZIA_ABSTRACT_SERVER_SOCKET
