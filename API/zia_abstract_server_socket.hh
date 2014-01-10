@@ -12,7 +12,7 @@ namespace zia
 	public:
 	virtual			~abstract_server_socket();
 
-	virtual void	register_acceptor_handler(const abstract_socket *) = 0;
+	virtual void	register_on_accept_handler(const abstract_socket *) = 0;
     };
 }
 
