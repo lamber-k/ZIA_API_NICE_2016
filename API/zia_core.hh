@@ -2,6 +2,7 @@
 # define	ZIA_ICORE
 
 # include		"zia_registration.hh"
+# include		"zia_abstract_server_socket.hh"
 
 /*
 ** Namespace for every Zia API Classes
@@ -11,7 +12,6 @@ namespace	zia
 
 	class	abstract_socket;
 	class	abstract_server_socket;
-	class	acceptor_handler;
 	class	request_handler;
 
 /*
@@ -35,7 +35,7 @@ namespace	zia
 ** Register a socket in the core. This socket will be monitored.
 **
 */
-		virtual void	register_server_socket(zia::abstract_socket *server_socket, const zia::acceptor_handler &handler) = 0;
+		virtual void	register_server_socket(zia::abstract_socket *server_socket, const zia::on_accept &handler) = 0;
 
 /*
 **
