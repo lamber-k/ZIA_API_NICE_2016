@@ -5,7 +5,7 @@
 
 namespace zia
 {
-    typedef void	(*acceptor_handler)(const abstract_socket *);
+    typedef void	(*on_accept)(const abstract_socket *);
 
     class abstract_server_socket
     {
