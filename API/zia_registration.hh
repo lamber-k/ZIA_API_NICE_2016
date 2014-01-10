@@ -17,10 +17,10 @@ namespace zia
 	enum registration_priority
 	{
 		REALLY_FIRST	= 4,
-		FIRST		= 3,
-		MIDDLE		= 2,
-		LAST		= 1,
-		REALLY_LAST	= 0
+		FIRST			= 3,
+		MIDDLE			= 2,
+		LAST			= 1,
+		REALLY_LAST		= 0
 	};
 
 /*

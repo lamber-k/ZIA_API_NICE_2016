@@ -25,20 +25,20 @@ namespace	zia
 **
 */
 
-	class		ICore
+	class ICore
 	{
-	public:
+	    public:
 
 /*
 **
 ** register_server_socket()
 ** Register a socket in the core. This socket will be monitored.
-** 
+**
 */
 		virtual void	register_server_socket(zia::abstract_socket *server_socket, const zia::acceptor_handler &handler) = 0;
 
 /*
-** 
+**
 ** register_request_state()
 ** Register a function to a specific state.
 ** You can also define a priority level to know if your function will be called.
