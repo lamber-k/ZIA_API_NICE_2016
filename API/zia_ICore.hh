@@ -20,9 +20,9 @@
 namespace	zia
 {
 
-  class	abstract_socket;
-  class	abstract_server_socket;
-  class	request_handler;
+  class	ISocket;
+  class	IServer_socket;
+  class	IHandler;
 
   /*!	@if french
    *	@brief		En cours.
@@ -49,7 +49,7 @@ namespace	zia
      *
      *	@endif
      */
-    virtual void	register_server_socket(zia::abstract_socket *server_socket,
+    virtual void	register_server_socket(zia::IServer_socket *server_socket,
 					       const zia::on_accept &handler) = 0;
 
     /*!	@if french
@@ -64,8 +64,8 @@ namespace	zia
      *
      *	@endif
      */
-    virtual void	register_request_state(zia::request_handler &,
-					       zia::request_state,
+    virtual void	register_request_state(zia::IHandler &,
+					       zia::Signal,
 					       zia::registration_priority = zia::MIDDLE) = 0;
 
   };

@@ -103,8 +103,6 @@ namespace zia
    * @brief	Register a handler in a specific state.
    * Every HTTP Request have a directive line.
    *
-   * a -> b -> c -> d -> e -> f
-   *
    * @endif
    *
    */
