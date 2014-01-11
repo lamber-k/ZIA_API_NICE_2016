@@ -103,14 +103,49 @@ namespace zia
    * @brief	Register a handler in a specific state.
    * Every HTTP Request have a directive line.
    *
-   * a -> b -> c -> d -> e -> f
-   *
    * @endif
    *
    */
-  enum request_state
+  enum Signal
     {
-
+      ACCESS_CHECKER,
+      AUTH_CHECKER,
+      CANON_HANDLER,
+      CHECK_USER_ID,
+      CHILD_INIT,
+      CREATE_CONNECTION,
+      CREATE_REQ,
+      CREATE_REQUEST,
+      DEFAULT_PORT,
+      FIND_LIVEPROP,
+      FIXUPS,
+      GATHER_PROPSETS,
+      GET_SUEXEC_IDENTITY,
+      HANDLER,
+      HEADER_PARSER,
+      HTTP_SCHEME,
+      INSERT_ALL_LIVEPROPS,
+      INSERT_ERROR_FILTER,
+      INSERT_FILTER,
+      LOG_TRANSACTION,
+      MAP_TO_STORAGE,
+      OPEN_LOGS,
+      OPTIONAL_FN_RETRIEVE,
+      POST_CONFIG,
+      POST_READ_REQUEST,
+      POST_REQUEST,
+      PRE_CONFIG,
+      PRE_CONNECTION,
+      PRE_MPM,
+      PRE_REQUEST,
+      PROCESS_CONNECTION,
+      QUICK_HANDLER,
+      REQUEST_STATUS,
+      SCHEME_HANDLER,
+      STATUS_HOOK,
+      TEST_CONFIG,
+      TRANSLATE_NAME,
+      TYPE_CHECKER
     };
 }
 
