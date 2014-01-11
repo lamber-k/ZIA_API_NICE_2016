@@ -15,8 +15,18 @@
  *
  */
 
+/*!	@brief zia Namespace
+ */
 namespace		zia
 {
+  /*!	@if french
+   *	@brief		En cours.
+   *
+   *	@elseif english
+   *	@brief		Interface for Zia's Module.
+   *
+   *	@endif
+   */
   class IModule
   {
   public:

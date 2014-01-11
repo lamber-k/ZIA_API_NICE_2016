@@ -7,7 +7,7 @@ namespace zia
 {
 
   /*!
-   * @file	"zia_Status_code.hh"
+   * @file	"zia_IStatus_code.hh"
    * @if french
    * @brief     Decris l'interface pour un status code
    *
@@ -18,11 +18,23 @@ namespace zia
    *
    */
 
+  /*!
+   * @brief	Zia's Status code interface
+   */
   class IStatus_Code
   {
   public:
 
-    
+    /*!
+     * @if french
+     * @brief     En cours
+     *
+     * @elseif english
+     * @brief		Type of code
+     *
+     * @endif
+     *
+     */
     typedef unsigned short code_type;
 
     virtual ~IStatus_Code() = 0 {};
@@ -38,7 +50,7 @@ namespace zia
      * @endif
      *
      */
-    virtual code_type		code() const = 0; 
+    virtual code_type		code() const = 0;
 
 
     /*!
