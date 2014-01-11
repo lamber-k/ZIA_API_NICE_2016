@@ -98,7 +98,7 @@ namespace	zia
      * @endif
      *
      */
-    virtual void		*getattr(std::string name, size_type size, zia::IModule &module) = 0;
+    virtual void		*getattr<T>(std::string name, size_type size, zia::IModule &module) = 0;
 
     /*!
      *
@@ -111,7 +111,7 @@ namespace	zia
      * @endif
      *
      */
-    virtual void		*getattr(std::string name, size_type size) = 0;
+    virtual void		*getattr<T>(std::string name, size_type size) = 0;
 
     /*!
      *
