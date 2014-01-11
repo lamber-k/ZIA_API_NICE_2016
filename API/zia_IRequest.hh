@@ -138,6 +138,33 @@ namespace	zia
      *
      */
     virtual const IStatus_code	&status_code() const = 0;
+
+
+    /*!
+     *
+     * @if french
+     * @brief En cours.
+     *
+     * @elseif english
+     * @brief			gets the servers response to the current request
+     *
+     * @endif
+     *
+     */
+    virtual IRequest&		response(void) const = 0;
+
+    /*!
+     *
+     * @if french
+     * @brief En cours.
+     *
+     * @elseif english
+     * @brief			sets the servers response to the current request
+     *
+     * @endif
+     *
+     */
+    virtual void		response(IRequest &response) = 0;
   };
 }
 
