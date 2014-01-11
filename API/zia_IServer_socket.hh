@@ -26,7 +26,7 @@ namespace zia
    *
    *	@endif
    */
-  typedef void	(*on_accept)(const abstract_socket *);
+  typedef void	(*on_accept)(const ISocket *);
 
   /*!	@if french
    *	@brief		En cours.
@@ -51,7 +51,7 @@ namespace zia
      *
      *	@endif
      */
-    virtual void	on_accept(const abstract_socket *) = 0;
+    virtual void	on_accept(const ISocket *) = 0;
   };
 }
 
