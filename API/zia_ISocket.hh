@@ -1,7 +1,7 @@
 #ifndef		ZIA_ABSTRACT_SOCKET
 # define	ZIA_ABSTRACT_SOCKET
 
-# include	"zia_buffer.hh"
+# include	"zia_IBuffer.hh"
 
 /*!
  * @file	"zia_ISocket.hh"
@@ -19,6 +19,9 @@
  */
 namespace zia
 {
+
+  class	IHandler;
+
   /*!
    *
    * @if french
@@ -220,7 +223,7 @@ namespace zia
      *
      *	@endif
      */
-    virtual socket_descriptor	socket_descriptor() const = 0 {return (_socket);};
+    virtual socket_descriptor	socket_descriptor() const = 0;
 
     /*!	@if french
      *	@brief		En cours.
@@ -230,7 +233,7 @@ namespace zia
      *
      *	@endif
      */
-    virtual void		close();
+    virtual void		close() = 0;
   };
 }
 
