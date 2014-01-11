@@ -234,6 +234,56 @@ namespace zia
      *	@endif
      */
     virtual void		close() = 0;
+
+    /*!	@if french
+     *	@brief		En cours.
+     *
+     *	@elseif english
+     *	@brief		Push data to send.
+     *
+     *	@endif
+     */
+    virtual void		write(const IBuffer &) = 0;
+
+    /*!	@if french
+     *	@brief		En cours.
+     *
+     *	@elseif english
+     *	@brief		change write monitor status.
+     *
+     *	@endif
+     */
+    virtual void		monitor_write(bool write) = 0;
+
+    /*!	@if french
+     *	@brief		En cours.
+     *
+     *	@elseif english
+     *	@brief		get write monitor status.
+     *
+     *	@endif
+     */
+    virtual bool		monitor_write() const = 0;
+
+    /*!	@if french
+     *	@brief		En cours.
+     *
+     *	@elseif english
+     *	@brief	        change read monitor status.
+     *
+     *	@endif
+     */
+    virtual void		monitor_read(bool read) = 0;
+
+    /*!	@if french
+     *	@brief		En cours.
+     *
+     *	@elseif english
+     *	@brief	        get read monitor status.
+     *
+     *	@endif
+     */
+    virtual bool		monitor_read() const = 0;
   };
 }
 
