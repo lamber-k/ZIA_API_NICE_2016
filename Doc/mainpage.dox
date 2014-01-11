@@ -1,14 +1,10 @@
-/**
-   @mainpage ZIA API Documentation
-
-   @if french
-
-   @elif english
-   This is the first draft of Epitech Zia project made by barato_j, jackma_p and lamber_k.
-
-   Here is a picture that describe how the API works.
-
-   @image html ZIA_API_UML.jpg
-
-   @endif
+/*!
+*  @mainpage ZIA API Documentation
+*
+*  This is the first draft of Epitech Zia project made by barato_j, jackma_p and lamber_k.
+*
+*  Here is a picture that describe how the API works.
+*
+*  @image html ZIA_API_UML.png
+*
 */

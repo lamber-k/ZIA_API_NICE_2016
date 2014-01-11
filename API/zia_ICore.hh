@@ -45,12 +45,32 @@ namespace	zia
      *	@brief		En cours.
      *
      *	@elseif english
-     *	@brief		Register a socket in the core. This socket will be monitored.
+     *	@brief		Used to call a module's handler on a Signal
+     *
+     *	@endif
+     */
+    virtual void	on_signal(Signal sig, IHandler &handle) = 0;
+
+    /*!	@if french
+     *	@brief		En cours.
+     *
+     *	@elseif english
+     *	@brief		Register a server socket in the core. This socket will be monitored.
      *
      *	@endif
      */
     virtual void	register_server_socket(zia::IServer_socket *server_socket,
 					       const zia::on_accept &handler) = 0;
+
+    /*!	@if french
+     *	@brief		En cours.
+     *
+     *	@elseif english
+     *	@brief		Register a client socket in the core. This socket will be monitored.
+     *
+     *	@endif
+     */
+    virtual void	register_client_socket(zia::ISocket *client_socket) = 0;
 
     /*!	@if french
      *	@brief		En cours.

@@ -41,7 +41,7 @@ namespace		zia
      *
      *  @endif
      */
-    virtual	void register_handlers(ICore &) const = 0;
+    virtual	void register_handlers(ICore &) = 0;
   }
 }
 
