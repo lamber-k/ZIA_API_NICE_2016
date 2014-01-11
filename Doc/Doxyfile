@@ -557,7 +557,7 @@ GENERATE_DEPRECATEDLIST= YES
 # documentation sections, marked by \if section-label ... \endif 
 # and \cond section-label ... \endcond blocks.
 
-ENABLED_SECTIONS       = 
+ENABLED_SECTIONS       = english
 
 # The MAX_INITIALIZER_LINES tag determines the maximum number of lines 
 # the initial value of a variable or macro consists of for it to appear in 
@@ -1330,7 +1330,7 @@ EXTRA_SEARCH_MAPPINGS  =
 # If the GENERATE_LATEX tag is set to YES (the default) Doxygen will 
 # generate Latex output.
 
-GENERATE_LATEX         = YES
+GENERATE_LATEX         = NO
 
 # The LATEX_OUTPUT tag is used to specify where the LaTeX docs will be put. 
 # If a relative path is entered the value of OUTPUT_DIRECTORY will be 
