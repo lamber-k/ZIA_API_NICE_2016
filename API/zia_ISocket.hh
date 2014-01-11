@@ -183,7 +183,7 @@ namespace zia
      *
      *	@endif
      */
-    virtual void		on_error(const IHandler &) = 0;
+    virtual void		on_error() = 0;
 
     /*!	@if french
      *	@brief		En cours.
@@ -193,7 +193,7 @@ namespace zia
      *
      *	@endif
      */
-    virtual void		on_read(const IHandler &) = 0;
+    virtual void		on_read() = 0;
 
     /*!	@if french
      *	@brief		En cours.
@@ -203,7 +203,7 @@ namespace zia
      *
      *	@endif
      */
-    virtual void		on_write(const IHandler &) = 0;
+    virtual void		on_write() = 0;
 
     /*!	@if french
      *	@brief		En cours.
@@ -213,7 +213,7 @@ namespace zia
      *
      *	@endif
      */
-    virtual void		on_change_state(const IHandler &) = 0;
+    virtual void		on_change_state() = 0;
 
     /*!	@if french
      *	@brief		En cours.

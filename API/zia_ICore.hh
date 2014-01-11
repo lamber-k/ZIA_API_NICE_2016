@@ -99,6 +99,16 @@ namespace	zia
      */
     virtual void	push_request(IRequest *) = 0;
 
+    /*!	@if french
+     *	@brief		En cours.
+     *
+     *	@elseif english
+     *	@brief		send the response after the treatment is done.
+     *
+     *	@endif
+     */
+    virtual void	send_response(const IRequest &req, const ISocket &socket) = 0;
+
   private:
 
     /*!	@if french
@@ -108,7 +118,7 @@ namespace	zia
      *	@brief		Deletes the request after it has been processed.
      *
      *	@endif
-     */    
+     */
     virtual void	delete_request(IRequest *) = 0;
   };
 }

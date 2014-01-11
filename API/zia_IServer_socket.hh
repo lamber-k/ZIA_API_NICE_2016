@@ -22,16 +22,6 @@ namespace zia
    *	@brief		En cours.
    *
    *	@elseif english
-   *	@brief		Typedef for on_accept signal.
-   *
-   *	@endif
-   */
-  typedef void	(*on_accept)(const ISocket *);
-
-  /*!	@if french
-   *	@brief		En cours.
-   *
-   *	@elseif english
    *	@brief		IServer_socket class.
    *
    *	Describe the interface that all server socket have to inherit.
@@ -51,11 +41,11 @@ namespace zia
      *
      *	@endif
      */
-    virtual void		on_accept(const ISocket *) = 0;
-    virtual void		on_error(const IHandler &) = 0;
-    virtual void		on_read(const IHandler &) = 0;
-    virtual void		on_write(const IHandler &) = 0;
-    virtual void		on_change_state(const IHandler &) = 0;
+    virtual void		on_accept() = 0;
+    virtual void		on_error() = 0;
+    virtual void		on_read() = 0;
+    virtual void		on_write() = 0;
+    virtual void		on_change_state() = 0;
     virtual socket_descriptor	socket_descriptor() const = 0;
     virtual void		close() = 0;
     virtual void		write(const IBuffer &) = 0;
