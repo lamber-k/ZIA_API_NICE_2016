@@ -1,8 +1,8 @@
-#ifndef		ZIA_ICORE
-# define	ZIA_ICORE
+#ifndef		ZIA_ICONNECTION_INFO
+# define	ZIA_ICONNECTION_INFO
 
 /*!
- * @file	"zia_IRequest.hh"
+ * @file	"zia_IConnection_info.hh"
  * @if french
  * @brief	Décris l'interface de la socket serveur lié au core.
  *
@@ -18,7 +18,7 @@
 namespace	zia
 {
 
-  class	IHandler;
+  class	IModule;
 
   /*!	@if french
    *	@brief		En cours.
@@ -33,7 +33,7 @@ namespace	zia
    *
    *	@endif
    */
-  class IRequest
+  class IConnection_info
   {
   public:
     /*! @if french
@@ -67,7 +67,7 @@ namespace	zia
      * @brief En cours.
      *
      * @elseif english
-     * @brief		Add an attribute to the request.
+     * @brief		Add an attribute to the connection info
      *
      * @endif
      *
@@ -80,7 +80,7 @@ namespace	zia
      * @brief En cours.
      *
      * @elseif english
-     * @brief		Add an attribute to the request.
+     * @brief		Add an attribute to the connection info
      *
      * @endif
      *
@@ -93,7 +93,7 @@ namespace	zia
      * @brief En cours.
      *
      * @elseif english
-     * @brief		Get an attribute of the request.
+     * @brief		Get an attribute of the connection info
      *
      * @endif
      *
@@ -106,66 +106,14 @@ namespace	zia
      * @brief En cours.
      *
      * @elseif english
-     * @brief		Get an attribute of the request.
+     * @brief		Get an attribute of the connection info
      *
      * @endif
      *
      */
     virtual void		*getattr(std::string name, size_type size) = 0;
 
-    /*!
-     *
-     * @if french
-     * @brief En cours.
-     *
-     * @elseif english
-     * @brief			set the status code.
-     *
-     * @endif
-     *
-     */
-    virtual void		status_code(const IStatus_code &code) = 0;
-
-    /*!
-     *
-     * @if french
-     * @brief En cours.
-     *
-     * @elseif english
-     * @brief			get the status code.
-     *
-     * @endif
-     *
-     */
-    virtual const IStatus_code	&status_code() const = 0;
-
-
-    /*!
-     *
-     * @if french
-     * @brief En cours.
-     *
-     * @elseif english
-     * @brief			gets the servers response to the current request
-     *
-     * @endif
-     *
-     */
-    virtual IRequest&		response(void) const = 0;
-
-    /*!
-     *
-     * @if french
-     * @brief En cours.
-     *
-     * @elseif english
-     * @brief			sets the servers response to the current request
-     *
-     * @endif
-     *
-     */
-    virtual void		response(IRequest &response) = 0;
   };
 }
 
-#endif // ZIA_ICORE
+#endif // ZIA_CONNECTION_INFO

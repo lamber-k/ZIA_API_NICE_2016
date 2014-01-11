@@ -88,6 +88,28 @@ namespace	zia
 					       zia::Signal,
 					       zia::registration_priority = zia::MIDDLE) = 0;
 
+
+    /*!	@if french
+     *	@brief		En cours.
+     *
+     *	@elseif english
+     *	@brief		Used to push the request to the core for processing.
+     *
+     *	@endif
+     */
+    virtual void	push_request(IRequest *) = 0;
+
+  private:
+
+    /*!	@if french
+     *	@brief		En cours.
+     *
+     *	@elseif english
+     *	@brief		Deletes the request after it has been processed.
+     *
+     *	@endif
+     */    
+    virtual void	delete_request(IRequest *) = 0;
   };
 }
 
