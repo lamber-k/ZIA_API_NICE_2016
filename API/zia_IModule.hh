@@ -3,6 +3,8 @@
 #ifndef			ZIA_MODULE
 # define		ZIA_MODULE
 
+# include		"zia_Windows.hh"
+
 /*!
  * @file	"zia_IModule.hh"
  * @if french
@@ -14,6 +16,8 @@
  * @endif
  *
  */
+
+class	ICore;
 
 /*!	@brief zia Namespace
  */
@@ -42,7 +46,7 @@ namespace		zia
      *  @endif
      */
     virtual	void register_handlers(ICore &) = 0;
-  }
+  };
 }
 
 #endif // ! ZIA_MODULE

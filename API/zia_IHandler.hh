@@ -4,6 +4,9 @@
 
 namespace zia
 {
+	class	IMessage;
+	class	IModule;
+
   /*!
    *
    * @if french
@@ -43,7 +46,7 @@ namespace zia
      *
      *  @endif
      */
-    virtual enum registration_priority	priority(IRequest& request) const = 0;
+    virtual enum registration_priority	priority(IMessage& request) const = 0;
 
 
     /*!	@if french
@@ -54,9 +57,9 @@ namespace zia
      *  with via the current instance of IHandler
      *	@endif
      */
-    virtual const IStatus_code		&operator()(request&) = 0;
+    virtual void 		operator()(IMessage&) const = 0;
 
-  }
+  };
 }
 
 #endif		// ! ZIA_IHANDLER

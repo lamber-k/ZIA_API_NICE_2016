@@ -18,7 +18,7 @@
  */
 namespace zia
 {
-  /*!	@if french
+   /*!	@if french
    *	@brief		En cours.
    *
    *	@elseif english
@@ -42,13 +42,10 @@ namespace zia
      *	@endif
      */
     virtual void		on_accept() = 0;
-    virtual void		on_error() = 0;
-    virtual void		on_read() = 0;
-    virtual void		on_write() = 0;
-    virtual void		on_change_state() = 0;
-    virtual socket_descriptor	socket_descriptor() const = 0;
+    virtual zia::socket_descriptor	socket_descriptor() const = 0;
+    virtual const ISocket_info		&socket_info() const = 0;
     virtual void		close() = 0;
-    virtual void		write(const IBuffer &) = 0;
+    virtual void		write(const zia::Byte *bytes, const std::size_t size) = 0;
     virtual void		monitor_write(bool write) = 0;
     virtual bool		monitor_write() const = 0;
     virtual void		monitor_read(bool read) = 0;

@@ -1,6 +1,8 @@
 #ifndef		ZIA_ICONNECTION_INFO
 # define	ZIA_ICONNECTION_INFO
 
+# include	"zia_Windows.hh"
+
 /*!
  * @file	"zia_IConnection_info.hh"
  * @if french

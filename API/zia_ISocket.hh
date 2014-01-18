@@ -1,7 +1,7 @@
 #ifndef		ZIA_ABSTRACT_SOCKET
 # define	ZIA_ABSTRACT_SOCKET
 
-# include	"zia_IBuffer.hh"
+# include	"zia_Windows.hh"
 
 /*!
  * @file	"zia_ISocket.hh"
@@ -20,7 +20,21 @@
 namespace zia
 {
 
-  class	IHandler;
+  class			IHandler;
+  class			ISocket_info;
+
+  /*!
+   *
+   * @if french
+   * @brief	Définis un octet de donnée.
+   *
+   * @elseif english
+   * @brief	Define a data octet.
+   *
+   * @endif
+   *
+   */
+  typedef char	Byte;
 
   /*!
    *
@@ -124,46 +138,6 @@ namespace zia
    *	@brief		En cours.
    *
    *	@elseif english
-   *	@brief		Typedef for read signal.
-   *
-   *	@endif
-   */
-  typedef void	(*on_read)(const zia::IBuffer &, const IBuffer::size_t);
-
-  /*!	@if french
-   *	@brief		En cours.
-   *
-   *	@elseif english
-   *	@brief		Typedef for write signal.
-   *
-   *	@endif
-   */
-  typedef void	(*on_write)(const std::size_t);
-
-  /*!	@if french
-   *	@brief		En cours.
-   *
-   *	@elseif english
-   *	@brief		Typedef for error signal.
-   *
-   *	@endif
-   */
-  typedef void	(*on_error)(const zia::socket_error);
-
-  /*!	@if french
-   *	@brief		En cours.
-   *
-   *	@elseif english
-   *	@brief		Typedef for changing state signal.
-   *
-   *	@endif
-   */
-  typedef void	(*on_change_state)(const socket_state);
-
-  /*!	@if french
-   *	@brief		En cours.
-   *
-   *	@elseif english
    *	@brief		ISocket class.
    *
    *	Describe the interface that all socket have to inherit.
@@ -209,21 +183,21 @@ namespace zia
      *	@brief		En cours.
      *
      *	@elseif english
-     *	@brief		This function will be called if the socket state was changed.
-     *
-     *	@endif
-     */
-    virtual void		on_change_state() = 0;
-
-    /*!	@if french
-     *	@brief		En cours.
-     *
-     *	@elseif english
      *	@brief		return the native socket descriptor.
      *
      *	@endif
      */
     virtual socket_descriptor	socket_descriptor() const = 0;
+
+    /*!	@if french
+     *	@brief		En cours.
+     *
+     *	@elseif english
+     *	@brief		return the native socket informations.
+     *
+     *	@endif
+     */
+    virtual const ISocket_info	&socket_info() const = 0;
 
     /*!	@if french
      *	@brief		En cours.
@@ -243,7 +217,7 @@ namespace zia
      *
      *	@endif
      */
-    virtual void		write(const IBuffer &) = 0;
+    virtual void		write(const zia::Byte *bytes, const std::size_t size) = 0;
 
     /*!	@if french
      *	@brief		En cours.

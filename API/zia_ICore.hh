@@ -13,7 +13,7 @@
  *
  */
 # include		"zia_registration.hh"
-# include		"zia_abstract_server_socket.hh"
+# include		"zia_IServer_socket.hh"
 
 /*!	@brief zia Namespace
  */
@@ -23,6 +23,7 @@ namespace	zia
   class	ISocket;
   class	IServer_socket;
   class	IHandler;
+  class IMessage;
 
   /*!	@if french
    *	@brief		En cours.
@@ -37,9 +38,75 @@ namespace	zia
    *
    *	@endif
    */
-  class ICore
+  class ZIA_CORE_API ICore
   {
   public:
+
+    /*!	@if french
+     *	@brief		En cours.
+     *
+     *	@elseif english
+     *	@brief		Register a server socket in the core. This socket will be monitored.
+     *
+     *	@endif
+     */
+    virtual void	register_server_socket(zia::IServer_socket *server_socket) = 0;
+
+    /*!	@if french
+     *	@brief		En cours.
+     *
+     *	@elseif english
+     *	@brief		Register a client socket in the core. This socket will be monitored.
+     *
+     *	@endif
+     */
+	virtual void	register_client_socket(zia::ISocket *client_socket) = 0;
+
+    /*!	@if french
+     *	@brief		En cours.
+     *
+     *	@elseif english
+     *	@brief		Register a socket in the core. This socket will be monitored.
+     *  Register a function to a specific state.
+     *  @note see also: zia_registration.hh
+     *
+     *	@endif
+     */
+    virtual void	register_request_state(zia::IHandler &handler, zia::Signal sig) = 0;
+
+
+    /*!	@if french
+     *	@brief		En cours.
+     *
+     *	@elseif english
+     *	@brief		Used to push the request to the core for processing.
+     *
+     *	@endif
+     */
+    virtual void	push_request(const IMessage *) = 0;
+
+  protected:
+
+    /*!	@if french
+     *	@brief		En cours.
+     *
+     *	@elseif english
+     *	@brief		send the response after the treatment is done.
+     *
+     *	@endif
+     */
+    virtual void	send_response(const IMessage &req, const ISocket &socket) = 0;
+
+
+	/*!	@if french
+     *	@brief		En cours.
+     *
+     *	@elseif english
+     *	@brief		Deletes the request after it has been processed.
+     *
+     *	@endif
+     */
+    virtual void	delete_request(IMessage *) = 0;
 
     /*!	@if french
      *	@brief		En cours.
@@ -51,75 +118,6 @@ namespace	zia
      */
     virtual void	on_signal(Signal sig, IHandler &handle) = 0;
 
-    /*!	@if french
-     *	@brief		En cours.
-     *
-     *	@elseif english
-     *	@brief		Register a server socket in the core. This socket will be monitored.
-     *
-     *	@endif
-     */
-    virtual void	register_server_socket(zia::IServer_socket *server_socket,
-					       const zia::on_accept &handler) = 0;
-
-    /*!	@if french
-     *	@brief		En cours.
-     *
-     *	@elseif english
-     *	@brief		Register a client socket in the core. This socket will be monitored.
-     *
-     *	@endif
-     */
-    virtual void	register_client_socket(zia::ISocket *client_socket) = 0;
-
-    /*!	@if french
-     *	@brief		En cours.
-     *
-     *	@elseif english
-     *	@brief		Register a socket in the core. This socket will be monitored.
-     *  Register a function to a specific state.
-     *  You can also define a priority level to know if your function will be called.
-     *  By default, priority is MIDDLE.
-     *  @note see also: zia_registration.hh
-     *
-     *	@endif
-     */
-    virtual void	register_request_state(zia::IHandler &,
-					       zia::Signal,
-					       zia::registration_priority = zia::MIDDLE) = 0;
-
-
-    /*!	@if french
-     *	@brief		En cours.
-     *
-     *	@elseif english
-     *	@brief		Used to push the request to the core for processing.
-     *
-     *	@endif
-     */
-    virtual void	push_request(IRequest *) = 0;
-
-    /*!	@if french
-     *	@brief		En cours.
-     *
-     *	@elseif english
-     *	@brief		send the response after the treatment is done.
-     *
-     *	@endif
-     */
-    virtual void	send_response(const IRequest &req, const ISocket &socket) = 0;
-
-  private:
-
-    /*!	@if french
-     *	@brief		En cours.
-     *
-     *	@elseif english
-     *	@brief		Deletes the request after it has been processed.
-     *
-     *	@endif
-     */
-    virtual void	delete_request(IRequest *) = 0;
   };
 }
 
