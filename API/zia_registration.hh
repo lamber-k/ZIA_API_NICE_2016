@@ -101,23 +101,78 @@ namespace zia
    *
    * @elseif english
    * @brief	Register a handler in a specific state.
-   * Every HTTP Request have a directive line.
+   *		Every HTTP Request has a directive line.
    *
    * @endif
    *
    */
+
   enum Signal
     {
       CONFIGURATION, // Basic server configurations
-      AUTHENTIFICATION,
+      /*!< @if french
+       * @brief	Hook pour les configurations 
+       *
+       * @elseif english
+       * @brief Hook to pre-request configurations
+       */
+
       CONNECTION,
+      /*!< @if french
+       * @brief	Hook pour le etat connection	
+       *
+       * @elseif english
+       * @brief Hook for handling connection states
+       */
+
+      AUTHENTIFICATION,
+      /*!< @if french
+       * @brief	Hook pour le etat authentification
+       *
+       * @elseif english
+       * @brief Hook for authenticating a connection
+       */
+
       HEADER_PARSE,
+      /*!< @if french
+       * @brief	Hook pour le parseur du header HTTP
+       *
+       * @elseif english
+       * @brief Hook for parsing the HTTP header
+       */
+      
       BODY_HANDLER,
+      /*!< @if french
+       * @brief	Hook pour le parseur du body HTTP
+       *
+       * @elseif english
+       * @brief Hook for parsing the HTTP body
+       */
+
       CGI_HANDLER,
+      /*!< @if french
+       * @brief	Hook pour les modules CGI
+       *
+       * @elseif english
+       * @brief Hook for all CGI Modules
+       */
+
       RESPONSE,
+      /*!< @if french
+       * @brief	Hook pour l'etat reponse
+       *
+       * @elseif english
+       * @brief Hook for the response state
+       */
+
       LOGGER
+      /*!< @if french
+       * @brief	Hook pour gestion de logger
+       *
+       * @elseif english
+       * @brief Hook handler as a logger
+       */
     };
 }
-
 
 #endif // !ZIA_REGISTRATION
