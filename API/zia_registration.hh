@@ -114,7 +114,8 @@ namespace zia
       HEADER_PARSE,
       BODY_HANDLER,
       CGI_HANDLER,
-      RESPONSE
+      RESPONSE,
+      LOGGER
     };
 }
 
