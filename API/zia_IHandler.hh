@@ -2,6 +2,8 @@
 #ifndef		ZIA_IHANDLER
 #define		ZIA_IHANDLER
 
+# include	"zia_registration.hh"
+
 namespace zia
 {
 	class	IMessage;
@@ -35,7 +37,7 @@ namespace zia
 
   public:
 
-    virtual ~IHandler() = 0 {};
+    virtual ~IHandler() {};
 
     /*!	@if french
      *	@brief		En cours.
@@ -46,7 +48,7 @@ namespace zia
      *
      *  @endif
      */
-    virtual enum registration_priority	priority(IMessage& request) const = 0;
+    virtual enum zia::registration_priority	priority(IMessage& request) const = 0;
 
 
     /*!	@if french

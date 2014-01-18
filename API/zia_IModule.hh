@@ -35,7 +35,7 @@ namespace		zia
   {
   public:
 
-    virtual	~IModule() = 0 {};
+    virtual	~IModule() {};
 
     /*! @if french
      *  @brief     En cours

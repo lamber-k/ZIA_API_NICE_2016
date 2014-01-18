@@ -72,7 +72,7 @@ namespace	zia
      *
      *	@endif
      */
-    virtual void	register_request_state(zia::IHandler &handler, zia::Signal sig) = 0;
+    virtual void	register_request_state(const zia::IHandler &handler, zia::Signal sig) = 0;
 
 
     /*!	@if french

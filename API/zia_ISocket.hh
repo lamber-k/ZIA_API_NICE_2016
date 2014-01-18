@@ -187,7 +187,7 @@ namespace zia
      *
      *	@endif
      */
-    virtual socket_descriptor	socket_descriptor() const = 0;
+    virtual zia::socket_descriptor	socket_descriptor() const = 0;
 
     /*!	@if french
      *	@brief		En cours.
