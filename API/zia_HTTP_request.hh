@@ -203,7 +203,7 @@ namespace	zia
        *	@brief		Retourne l'URI de la requête.
        *
        *	@elseif english
-       *	@brief		Get the request method.
+       *	@brief		Get the URI request.
        *
        *	@endif
        */
@@ -216,7 +216,7 @@ namespace	zia
        *	@brief		Modifie l'URI de la requête.
        *
        *	@elseif english
-       *	@brief		Set the URI method.
+       *	@brief		Set the URI request.
        *
        *	@endif
        */

@@ -1,4 +1,4 @@
-#ifndef ZIA_HTTP_RESPONSE_H_
+7#ifndef ZIA_HTTP_RESPONSE_H_
 # define ZIA_HTTP_RESPONSE_H_
 
 # include	"zia_HTTP_types.hh"
