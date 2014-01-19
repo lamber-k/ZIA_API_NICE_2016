@@ -109,7 +109,7 @@ namespace zia
 
   enum Signal
     {
-      CONFIGURATION, // Basic server configurations
+      CONFIGURATION,
       /*!< @if french
        * @brief	Hook pour les configurations 
        *
