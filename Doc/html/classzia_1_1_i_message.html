@@ -90,6 +90,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classzia_1_1_i_message-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">zia::IMessage Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -100,6 +101,40 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <a href="classzia_1_1_i_message.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="zia___i_message_8hh_source.html">zia_IMessage.hh</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a30929a050a013026b6da791f030e3c31"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a30929a050a013026b6da791f030e3c31"></a>
+virtual <a class="el" href="classzia_1_1http_1_1_request.html">http::Request</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classzia_1_1_i_message.html#a30929a050a013026b6da791f030e3c31">request</a> ()=0</td></tr>
+<tr class="memdesc:a30929a050a013026b6da791f030e3c31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the request. <br/></td></tr>
+<tr class="separator:a30929a050a013026b6da791f030e3c31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7f2dc741b6a2aa3b0d596189d29553c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7f2dc741b6a2aa3b0d596189d29553c"></a>
+virtual <a class="el" href="classzia_1_1http_1_1_response.html">http::Response</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classzia_1_1_i_message.html#af7f2dc741b6a2aa3b0d596189d29553c">response</a> ()=0</td></tr>
+<tr class="memdesc:af7f2dc741b6a2aa3b0d596189d29553c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the response. <br/></td></tr>
+<tr class="separator:af7f2dc741b6a2aa3b0d596189d29553c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85adce7203482a9bbe3ca16397f88e14"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85adce7203482a9bbe3ca16397f88e14"></a>
+virtual <a class="el" href="classzia_1_1_i_socket__info.html">ISocket_info</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classzia_1_1_i_message.html#a85adce7203482a9bbe3ca16397f88e14">socket_info</a> ()=0</td></tr>
+<tr class="memdesc:a85adce7203482a9bbe3ca16397f88e14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get connexion informations interface. <br/></td></tr>
+<tr class="separator:a85adce7203482a9bbe3ca16397f88e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea02f6a39fbee2d42601ab1cbbf194d7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea02f6a39fbee2d42601ab1cbbf194d7"></a>
+virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classzia_1_1_i_message.html#aea02f6a39fbee2d42601ab1cbbf194d7">addattr</a> (std::string name, std::size_t size, <a class="el" href="classzia_1_1_i_module.html">zia::IModule</a> &amp;module)=0</td></tr>
+<tr class="memdesc:aea02f6a39fbee2d42601ab1cbbf194d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an attribute to the request. <br/></td></tr>
+<tr class="separator:aea02f6a39fbee2d42601ab1cbbf194d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a571b559197acf6a1e835f2f03e5c71a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a571b559197acf6a1e835f2f03e5c71a7"></a>
+virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classzia_1_1_i_message.html#a571b559197acf6a1e835f2f03e5c71a7">addattr</a> (std::string name, std::size_t size)=0</td></tr>
+<tr class="memdesc:a571b559197acf6a1e835f2f03e5c71a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an attribute to the request. <br/></td></tr>
+<tr class="separator:a571b559197acf6a1e835f2f03e5c71a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a321bd7f480fc41e2059da54417a93b71"><td class="memTemplParams" colspan="2"><a class="anchor" id="a321bd7f480fc41e2059da54417a93b71"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a321bd7f480fc41e2059da54417a93b71"><td class="memTemplItemLeft" align="right" valign="top">virtual T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classzia_1_1_i_message.html#a321bd7f480fc41e2059da54417a93b71">getattr</a> (std::string name, <a class="el" href="classzia_1_1_i_module.html">zia::IModule</a> &amp;module)=0</td></tr>
+<tr class="memdesc:a321bd7f480fc41e2059da54417a93b71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an attribute of the request. <br/></td></tr>
+<tr class="separator:a321bd7f480fc41e2059da54417a93b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ab6b3b8a93f0c8384e05b8556a7ab28"><td class="memTemplParams" colspan="2"><a class="anchor" id="a1ab6b3b8a93f0c8384e05b8556a7ab28"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a1ab6b3b8a93f0c8384e05b8556a7ab28"><td class="memTemplItemLeft" align="right" valign="top">virtual T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classzia_1_1_i_message.html#a1ab6b3b8a93f0c8384e05b8556a7ab28">getattr</a> (std::string name)=0</td></tr>
+<tr class="memdesc:a1ab6b3b8a93f0c8384e05b8556a7ab28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an attribute of the request. <br/></td></tr>
+<tr class="separator:a1ab6b3b8a93f0c8384e05b8556a7ab28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Message interface. </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
@@ -108,7 +143,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 19 2014 17:00:34 for API ZIA by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 19 2014 17:11:40 for API ZIA by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

@@ -40,6 +40,7 @@ namespace	zia
    */
   class		IMessage
   {
+  public:
     /*!
      *
      * @if	french
@@ -90,7 +91,7 @@ namespace	zia
      * @endif
      *
      */
-    virtual void    *addattr(std::string name, size_type size, zia::IModule &module) = 0;
+    virtual void    *addattr(std::string name, std::size_t size, zia::IModule &module) = 0;
 
     /*!
      *
@@ -103,7 +104,7 @@ namespace	zia
      * @endif
      *
      */
-    virtual void    *addattr(std::string name, size_type size) = 0;
+    virtual void    *addattr(std::string name, std::size_t size) = 0;
 
     /*!
      *

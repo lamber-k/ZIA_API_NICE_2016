@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['getattr',['getattr',['../classzia_1_1_i_request.html#a0a0540ac208c5c4ce9e8a4c3caf7e85f',1,'zia::IRequest::getattr(std::string name, size_type size, zia::IModule &amp;module)=0'],['../classzia_1_1_i_request.html#a8d3b662ffc7a0ff0b258187d408ec990',1,'zia::IRequest::getattr(std::string name, size_type size)=0']]]
+  ['getattr',['getattr',['../classzia_1_1_i_message.html#a321bd7f480fc41e2059da54417a93b71',1,'zia::IMessage::getattr(std::string name, zia::IModule &amp;module)=0'],['../classzia_1_1_i_message.html#a1ab6b3b8a93f0c8384e05b8556a7ab28',1,'zia::IMessage::getattr(std::string name)=0']]]
 ];
