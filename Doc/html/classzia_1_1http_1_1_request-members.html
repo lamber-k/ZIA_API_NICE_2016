@@ -21,9 +21,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="EZIA_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">API ZIA
-   &#160;<span id="projectnumber">0.3beta</span>
+   &#160;<span id="projectnumber">0.5</span>
    </div>
    <div id="projectbrief">API for Epitech Zia Project</div>
   </td>
@@ -95,14 +96,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="classzia_1_1http_1_1_request.html">zia::http::Request</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>operator=</b>(Request const &amp;) (defined in <a class="el" href="classzia_1_1http_1_1_request.html">zia::http::Request</a>)</td><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html">zia::http::Request</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>Request</b>() (defined in <a class="el" href="classzia_1_1http_1_1_request.html">zia::http::Request</a>)</td><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html">zia::http::Request</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Request</b>(Request const &amp;) (defined in <a class="el" href="classzia_1_1http_1_1_request.html">zia::http::Request</a>)</td><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html">zia::http::Request</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>~Request</b>() (defined in <a class="el" href="classzia_1_1http_1_1_request.html">zia::http::Request</a>)</td><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html">zia::http::Request</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>_body</b> (defined in <a class="el" href="classzia_1_1http_1_1_request.html">zia::http::Request</a>)</td><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html">zia::http::Request</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>_fields</b> (defined in <a class="el" href="classzia_1_1http_1_1_request.html">zia::http::Request</a>)</td><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html">zia::http::Request</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>_method</b> (defined in <a class="el" href="classzia_1_1http_1_1_request.html">zia::http::Request</a>)</td><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html">zia::http::Request</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>_uri</b> (defined in <a class="el" href="classzia_1_1http_1_1_request.html">zia::http::Request</a>)</td><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html">zia::http::Request</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>_version</b> (defined in <a class="el" href="classzia_1_1http_1_1_request.html">zia::http::Request</a>)</td><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html">zia::http::Request</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html#a327dc3d37004e3c96873f7b240335098">add_field</a>(const field_name_type &amp;name, const field_value_type &amp;value)</td><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html">zia::http::Request</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html#a8f5e9d6e1c2591653ab1da21145457db">field_exist</a>(const field_name_type &amp;name)</td><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html">zia::http::Request</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html#a69fa2484201044abb8e7424d23772bf5">fields</a>() const </td><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html">zia::http::Request</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html#a93f26cb2b8883f4a85dd4e2e6574f858">format</a>() const </td><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html">zia::http::Request</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html#a46514cd85629675ada85c1ff70025e03">method</a>() const </td><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html">zia::http::Request</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html#a9b783d04b678cf06388b0a4c387c6a68">method</a>(const method_type &amp;method)</td><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html">zia::http::Request</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html#a098ef9cd93664586fc0903740e041cf7">operator=</a>(Request const &amp;src)</td><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html">zia::http::Request</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html#a925232b73bb63063cdc802e1bb4c635d">Request</a>()</td><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html">zia::http::Request</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html#a1b20121f80c7c9438adf438c6baccdf2">Request</a>(const method_type &amp;method, const version_type &amp;version, const uri_type URI)</td><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html">zia::http::Request</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html#aaf4c47aa6ac6571432022d8072ab48e8">Request</a>(Request const &amp;src)</td><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html">zia::http::Request</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html#ac690ff11928f5d1af1f0674272ff8e3e">uri</a>() const </td><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html">zia::http::Request</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html#ac54e46601bad0b41638c40f2328bd94f">uri</a>(const uri_type &amp;uri)</td><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html">zia::http::Request</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html#a7238247a21539cc90ee69131b13b25f8">version</a>() const </td><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html">zia::http::Request</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html#a218f5f88c2b94c2ff667f3b351043659">version</a>(const version_type &amp;version)</td><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html">zia::http::Request</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>~Request</b>() (defined in <a class="el" href="classzia_1_1http_1_1_request.html">zia::http::Request</a>)</td><td class="entry"><a class="el" href="classzia_1_1http_1_1_request.html">zia::http::Request</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 18 2014 18:15:13 for API ZIA by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 19 2014 15:22:48 for API ZIA by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

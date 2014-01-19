@@ -32,7 +32,7 @@ PROJECT_NAME           = "API ZIA"
 # This could be handy for archiving the generated documentation or 
 # if some version control system is used.
 
-PROJECT_NUMBER         = 0.3 beta
+PROJECT_NUMBER         = 0.5
 
 # Using the PROJECT_BRIEF tag one can provide an optional one line description 
 # for a project that appears at the top of each page and should give viewer 
@@ -45,7 +45,7 @@ PROJECT_BRIEF          = "API for Epitech Zia Project"
 # exceed 55 pixels and the maximum width should not exceed 200 pixels. 
 # Doxygen will copy the logo to the output directory.
 
-PROJECT_LOGO           = 
+PROJECT_LOGO           = /home/lamber_k/Dropbox/Projects/module_5e_sem/zia/ZIA_API_NICE_2016/Doc/EZIA_logo.png
 
 # The OUTPUT_DIRECTORY tag is used to specify the (relative or absolute) 
 # base path where the generated documentation will be put. 

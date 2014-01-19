@@ -21,9 +21,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="EZIA_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">API ZIA
-   &#160;<span id="projectnumber">0.3beta</span>
+   &#160;<span id="projectnumber">0.5</span>
    </div>
    <div id="projectbrief">API for Epitech Zia Project</div>
   </td>
@@ -92,29 +93,125 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="zia___h_t_t_p__response_8hh.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef ZIA_HTTP_RESPONSE_H_</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># define ZIA_HTTP_RESPONSE_H_</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace   </span>zia</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">namespace </span>http</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  {</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="classzia_1_1http_1_1_response.html">   34</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classzia_1_1http_1_1_response.html" title="Response class.">Response</a></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <a class="code" href="classzia_1_1http_1_1_response.html" title="Response class.">Response</a>();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <a class="code" href="classzia_1_1http_1_1_response.html" title="Response class.">Response</a>(<a class="code" href="classzia_1_1http_1_1_response.html" title="Response class.">Response</a> <span class="keyword">const</span>&amp;);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keyword">virtual</span> ~<a class="code" href="classzia_1_1http_1_1_response.html" title="Response class.">Response</a>();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      <a class="code" href="classzia_1_1http_1_1_response.html" title="Response class.">Response</a>&amp; operator=(<a class="code" href="classzia_1_1http_1_1_response.html" title="Response class.">Response</a> <span class="keyword">const</span>&amp;);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    };</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ZIA_HTTP_RESPONSE_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor"># include   &quot;<a class="code" href="zia___h_t_t_p__types_8hh.html" title="HTTP request and responses types.">zia_HTTP_types.hh</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace   </span>zia</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">namespace </span>http</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  {</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="classzia_1_1http_1_1_response.html">   36</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classzia_1_1http_1_1_response.html" title="Response class.">Response</a></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="classzia_1_1http_1_1_response.html#aea101277eeae59bf22857928e48d1e06">   47</a></span>&#160;      <a class="code" href="classzia_1_1http_1_1_response.html#aea101277eeae59bf22857928e48d1e06" title="Default constructor.">Response</a>() { }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="code" href="classzia_1_1http_1_1_response.html#a8ca8016293faa6db0fc6fa6a0b424859">   57</a></span>&#160;      <a class="code" href="classzia_1_1http_1_1_response.html#aea101277eeae59bf22857928e48d1e06" title="Default constructor.">Response</a>(<span class="keyword">const</span> <a class="code" href="namespacezia_1_1http.html#a94e0618ee0d37aad080e517c7e9666c7" title="version Typedef.">version_type</a> &amp;<a class="code" href="classzia_1_1http_1_1_response.html#a1bd0935e066a204009afdba5911e4c40" title="Get the HTTP protocol version.">version</a>, <a class="code" href="namespacezia_1_1http.html#a89f27638d6675545c45571c454fa65e4" title="HTTP return code Typedef.">response_code_type</a> code,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;          <span class="keyword">const</span> <a class="code" href="namespacezia_1_1http.html#a5e484a1968cd41910fbd80242e2b54dd" title="reason phrase Typedef.">reason_phrase_type</a> &amp;<a class="code" href="classzia_1_1http_1_1_response.html#a847a3c918301bbd2db0a32c4561f2630" title="Get the reason phrase URI.">reason_phrase</a>):</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    _version(version),</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    _code(code),</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    _reason_phrase(reason_phrase)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="code" href="classzia_1_1http_1_1_response.html#acd4a4df2e482bf4b45d3e67fc88e3595">   73</a></span>&#160;      <a class="code" href="classzia_1_1http_1_1_response.html#aea101277eeae59bf22857928e48d1e06" title="Default constructor.">Response</a>(<a class="code" href="classzia_1_1http_1_1_response.html" title="Response class.">Response</a> <span class="keyword">const</span> &amp;src):</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    _version(src._version),</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    _response_code(src._response_code),</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    _reason_phrase(src._reason_phrase),</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    _fields(src._fields),</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    _body(src._body)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <span class="keyword">virtual</span> ~<a class="code" href="classzia_1_1http_1_1_response.html" title="Response class.">Response</a>() {}</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="code" href="classzia_1_1http_1_1_response.html#a8fdf541f53ffbf92d336543a5b9c91e3">   94</a></span>&#160;      <a class="code" href="classzia_1_1http_1_1_response.html" title="Response class.">Response</a>&amp; <a class="code" href="classzia_1_1http_1_1_response.html#a8fdf541f53ffbf92d336543a5b9c91e3" title="Copy Class Assignement.">operator=</a>(<a class="code" href="classzia_1_1http_1_1_response.html" title="Response class.">Response</a> <span class="keyword">const</span> &amp;src)</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;src)</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        _version = src._version;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        _response_code = src._response_code;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        _reason_phrase = src._reason_phrase;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        _fields = src._fields;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        _body = src._body;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">return</span> (*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="code" href="classzia_1_1http_1_1_response.html#aa32af17cc367e5021c370568d6a48ea8">  117</a></span>&#160;      <span class="keywordtype">void</span>  <a class="code" href="classzia_1_1http_1_1_response.html#aa32af17cc367e5021c370568d6a48ea8" title="Add a field in HTTP response.">add_field</a>(<span class="keyword">const</span> <a class="code" href="namespacezia_1_1http.html#adf7ee71675116982f400c5be248080d1" title="field name Typedef.">field_name_type</a> &amp;name, <span class="keyword">const</span> <a class="code" href="namespacezia_1_1http.html#aab5877eb919dbf4abcd22099237bdfda" title="field value Typedef.">field_value_type</a> &amp;value)</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    _fields[name] = value;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="code" href="classzia_1_1http_1_1_response.html#a1dc257d37bcf989d295608c0040fec02">  130</a></span>&#160;      <span class="keywordtype">bool</span>  <a class="code" href="classzia_1_1http_1_1_response.html#a1dc257d37bcf989d295608c0040fec02" title="Test if this field exist in the response.">field_exist</a>(<span class="keyword">const</span> <a class="code" href="namespacezia_1_1http.html#adf7ee71675116982f400c5be248080d1" title="field name Typedef.">field_name_type</a> &amp;name)</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      {</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">return</span> (_fields.find(name) != _fields.end());</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;      }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="code" href="classzia_1_1http_1_1_response.html#a1289157cc9a36187e3e65c703d5e5127">  143</a></span>&#160;      <span class="keyword">const</span> <a class="code" href="namespacezia_1_1http.html#a10f763387ad1ef6cae96ecddeb77b64f" title="HTTP fields container Typedef.">fields_type</a> &amp;<a class="code" href="classzia_1_1http_1_1_response.html#a1289157cc9a36187e3e65c703d5e5127" title="Return the response fields.">fields</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="keyword">      </span>{</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordflow">return</span> (_fields);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;      }</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="code" href="classzia_1_1http_1_1_response.html#a1bd0935e066a204009afdba5911e4c40">  156</a></span>&#160;      <span class="keyword">const</span> <a class="code" href="namespacezia_1_1http.html#a94e0618ee0d37aad080e517c7e9666c7" title="version Typedef.">version_type</a>    &amp;<a class="code" href="classzia_1_1http_1_1_response.html#a1bd0935e066a204009afdba5911e4c40" title="Get the HTTP protocol version.">version</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="keyword">      </span>{</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordflow">return</span> (_version);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      }</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00169"></a><span class="lineno"><a class="code" href="classzia_1_1http_1_1_response.html#aac138cc8f482d793b5415d5ca539554e">  169</a></span>&#160;      <span class="keywordtype">void</span>          <a class="code" href="classzia_1_1http_1_1_response.html#a1bd0935e066a204009afdba5911e4c40" title="Get the HTTP protocol version.">version</a>(<span class="keyword">const</span> <a class="code" href="namespacezia_1_1http.html#a94e0618ee0d37aad080e517c7e9666c7" title="version Typedef.">version_type</a> &amp;<a class="code" href="classzia_1_1http_1_1_response.html#a1bd0935e066a204009afdba5911e4c40" title="Get the HTTP protocol version.">version</a>)</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;      {</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    _version = <a class="code" href="classzia_1_1http_1_1_response.html#a1bd0935e066a204009afdba5911e4c40" title="Get the HTTP protocol version.">version</a>;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      }</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00182"></a><span class="lineno"><a class="code" href="classzia_1_1http_1_1_response.html#aeb29e350cd6c9ff5ebbb0992e38898e9">  182</a></span>&#160;      <a class="code" href="namespacezia_1_1http.html#a89f27638d6675545c45571c454fa65e4" title="HTTP return code Typedef.">response_code_type</a>        <a class="code" href="classzia_1_1http_1_1_response.html#aeb29e350cd6c9ff5ebbb0992e38898e9" title="Get the response code.">response_code</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="keyword">      </span>{</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordflow">return</span> (_response_code);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;      }</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno"><a class="code" href="classzia_1_1http_1_1_response.html#ac1f4e84c4aeb910d99878228cd7790ac">  195</a></span>&#160;      <span class="keywordtype">void</span>          <a class="code" href="classzia_1_1http_1_1_response.html#aeb29e350cd6c9ff5ebbb0992e38898e9" title="Get the response code.">response_code</a>(<a class="code" href="namespacezia_1_1http.html#a89f27638d6675545c45571c454fa65e4" title="HTTP return code Typedef.">response_code_type</a> <a class="code" href="classzia_1_1http_1_1_response.html#aeb29e350cd6c9ff5ebbb0992e38898e9" title="Get the response code.">response_code</a>)</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;      {</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    _response_code = <a class="code" href="classzia_1_1http_1_1_response.html#aeb29e350cd6c9ff5ebbb0992e38898e9" title="Get the response code.">response_code</a>;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;      }</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
+<div class="line"><a name="l00208"></a><span class="lineno"><a class="code" href="classzia_1_1http_1_1_response.html#a847a3c918301bbd2db0a32c4561f2630">  208</a></span>&#160;      <span class="keyword">const</span> <a class="code" href="namespacezia_1_1http.html#a5e484a1968cd41910fbd80242e2b54dd" title="reason phrase Typedef.">reason_phrase_type</a>      &amp;<a class="code" href="classzia_1_1http_1_1_response.html#a847a3c918301bbd2db0a32c4561f2630" title="Get the reason phrase URI.">reason_phrase</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="keyword">      </span>{</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordflow">return</span> (_reason_phrase);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;      }</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
+<div class="line"><a name="l00221"></a><span class="lineno"><a class="code" href="classzia_1_1http_1_1_response.html#a4d6a3593bb7644c15ccf02895d6bd2cc">  221</a></span>&#160;      <span class="keywordtype">void</span>          <a class="code" href="classzia_1_1http_1_1_response.html#a847a3c918301bbd2db0a32c4561f2630" title="Get the reason phrase URI.">reason_phrase</a>(<span class="keyword">const</span> <a class="code" href="namespacezia_1_1http.html#a5e484a1968cd41910fbd80242e2b54dd" title="reason phrase Typedef.">reason_phrase_type</a> &amp;<a class="code" href="classzia_1_1http_1_1_response.html#a847a3c918301bbd2db0a32c4561f2630" title="Get the reason phrase URI.">reason_phrase</a>)</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;      {</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    _reason_phrase = <a class="code" href="classzia_1_1http_1_1_response.html#a847a3c918301bbd2db0a32c4561f2630" title="Get the reason phrase URI.">reason_phrase</a>;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;      }</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
+<div class="line"><a name="l00234"></a><span class="lineno"><a class="code" href="classzia_1_1http_1_1_response.html#a052ba724c514d48903e86caea080739b">  234</a></span>&#160;      <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="namespacezia_1_1http.html#afe8801ec1e2a9f741ed0278f62a65db0" title="HTTP fields container Typedef.">raw_type</a>    <a class="code" href="classzia_1_1http_1_1_response.html#a052ba724c514d48903e86caea080739b" title="Return the raw format.">format</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="keyword">      </span>{</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    std::stringstream   output;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    output &lt;&lt; _version &lt;&lt; SP &lt;&lt; _code &lt;&lt; SP &lt;&lt; _reason_phrase &lt;&lt; CRLF;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keywordflow">for</span> (fields_type::const_iterator it = _fields.begin(); it != _fields.end(); ++it)</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;      output &lt;&lt; it-&gt;first &lt;&lt; <span class="charliteral">&#39;:&#39;</span> &lt;&lt; it-&gt;second &lt;&lt; CRLF;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    output &lt;&lt; CRLF &lt;&lt; _body;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    return (output.str());</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;      }</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;      <a class="code" href="namespacezia_1_1http.html#a94e0618ee0d37aad080e517c7e9666c7" title="version Typedef.">version_type</a>      _version;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;      <a class="code" href="namespacezia_1_1http.html#a89f27638d6675545c45571c454fa65e4" title="HTTP return code Typedef.">response_code_type</a>    _code;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;      <a class="code" href="namespacezia_1_1http.html#a5e484a1968cd41910fbd80242e2b54dd" title="reason phrase Typedef.">reason_phrase_type</a>    _reason_phrase;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;      <a class="code" href="namespacezia_1_1http.html#a10f763387ad1ef6cae96ecddeb77b64f" title="HTTP fields container Typedef.">fields_type</a>       _fields;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;      <a class="code" href="namespacezia_1_1http.html#aa7c32fa5647132c074bcd7a0ef7107cd" title="body Typedef.">body_type</a>         _body;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    };</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  }</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;}</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ZIA_HTTP_RESPONSE_H_ */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 18 2014 18:15:13 for API ZIA by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 19 2014 15:22:48 for API ZIA by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

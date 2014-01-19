@@ -1,6 +1,7 @@
 var searchData=
 [
   ['zia_5fhttp_5fresponse_2ehh',['zia_HTTP_response.hh',['../zia___h_t_t_p__response_8hh.html',1,'']]],
+  ['zia_5fhttp_5ftypes_2ehh',['zia_HTTP_types.hh',['../zia___h_t_t_p__types_8hh.html',1,'']]],
   ['zia_5ficonnection_5finfo_2ehh',['zia_IConnection_info.hh',['../zia___i_connection__info_8hh.html',1,'']]],
   ['zia_5fimessage_2ehh',['zia_IMessage.hh',['../zia___i_message_8hh.html',1,'']]],
   ['zia_5fimodule_2ehh',['zia_IModule.hh',['../zia___i_module_8hh.html',1,'']]],
