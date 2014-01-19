@@ -8,7 +8,6 @@ var searchData=
   ['zia_5fihandler_2ehh',['zia_IHandler.hh',['../zia___i_handler_8hh.html',1,'']]],
   ['zia_5fimessage_2ehh',['zia_IMessage.hh',['../zia___i_message_8hh.html',1,'']]],
   ['zia_5fimodule_2ehh',['zia_IModule.hh',['../zia___i_module_8hh.html',1,'']]],
-  ['zia_5firequest_2ehh',['zia_IRequest.hh',['../zia___i_request_8hh.html',1,'']]],
   ['zia_5fiserver_5fsocket_2ehh',['zia_IServer_socket.hh',['../zia___i_server__socket_8hh.html',1,'']]],
   ['zia_5fisocket_2ehh',['zia_ISocket.hh',['../zia___i_socket_8hh.html',1,'']]],
   ['zia_5fisocket_5finfo_2ehh',['zia_ISocket_info.hh',['../zia___i_socket__info_8hh.html',1,'']]],

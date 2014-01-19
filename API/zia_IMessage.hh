@@ -78,6 +78,60 @@ namespace	zia
      *
      */
     virtual ISocket_info	&socket_info() = 0;
+
+    /*!
+     *
+     * @if french
+     * @brief En cours.
+     *
+     * @elseif english
+     * @brief    Add an attribute to the request.
+     *
+     * @endif
+     *
+     */
+    virtual void    *addattr(std::string name, size_type size, zia::IModule &module) = 0;
+
+    /*!
+     *
+     * @if french
+     * @brief En cours.
+     *
+     * @elseif english
+     * @brief    Add an attribute to the request.
+     *
+     * @endif
+     *
+     */
+    virtual void    *addattr(std::string name, size_type size) = 0;
+
+    /*!
+     *
+     * @if french
+     * @brief En cours.
+     *
+     * @elseif english
+     * @brief    Get an attribute of the request.
+     *
+     * @endif
+     *
+     */
+    template <typename T>
+    virtual T		*getattr<T>(std::string name, zia::IModule &module) = 0;
+
+    /*!
+     *
+     * @if french
+     * @brief En cours.
+     *
+     * @elseif english
+     * @brief    Get an attribute of the request.
+     *
+     * @endif
+     *
+     */
+    template <typename T>
+    virtual T    *getattr<T>(std::string name) = 0;
   };
 }
 
