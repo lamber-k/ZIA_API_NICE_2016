@@ -226,6 +226,32 @@ namespace	zia
       }
 
       /*!	@if french
+       *	@brief		Retourne le "body" de la réponse.
+       *
+       *	@elseif english
+       *	@brief		Get the body response.
+       *
+       *	@endif
+       */
+      const body_type		&body() const
+      {
+	return (_body);
+      }
+
+      /*!	@if french
+       *	@brief		Modifie le contenu du body de la réponse.
+       *
+       *	@elseif english
+       *	@brief		Set the response body content.
+       *
+       *	@endif
+       */
+      void			body(const body_type &body)
+      {
+	_body = body;
+      }
+
+      /*!	@if french
        *	@brief		Retourne le formattage de la requête HTTP crée.
        *
        *	@elseif english

@@ -144,6 +144,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac54e46601bad0b41638c40f2328bd94f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classzia_1_1http_1_1_request.html#ac54e46601bad0b41638c40f2328bd94f">uri</a> (const <a class="el" href="namespacezia_1_1http.html#a50c589a2603aa6daac16a1c91d915f83">uri_type</a> &amp;uri)</td></tr>
 <tr class="memdesc:ac54e46601bad0b41638c40f2328bd94f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the URI request.  <a href="#ac54e46601bad0b41638c40f2328bd94f">More...</a><br/></td></tr>
 <tr class="separator:ac54e46601bad0b41638c40f2328bd94f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dab8413efd8a47d8662c632e3a36fcd"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacezia_1_1http.html#aa7c32fa5647132c074bcd7a0ef7107cd">body_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classzia_1_1http_1_1_request.html#a8dab8413efd8a47d8662c632e3a36fcd">body</a> () const </td></tr>
+<tr class="memdesc:a8dab8413efd8a47d8662c632e3a36fcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the body response.  <a href="#a8dab8413efd8a47d8662c632e3a36fcd">More...</a><br/></td></tr>
+<tr class="separator:a8dab8413efd8a47d8662c632e3a36fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af09217f45a373370cbef1afd0d0ac771"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classzia_1_1http_1_1_request.html#af09217f45a373370cbef1afd0d0ac771">body</a> (const <a class="el" href="namespacezia_1_1http.html#aa7c32fa5647132c074bcd7a0ef7107cd">body_type</a> &amp;body)</td></tr>
+<tr class="memdesc:af09217f45a373370cbef1afd0d0ac771"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the response body content.  <a href="#af09217f45a373370cbef1afd0d0ac771">More...</a><br/></td></tr>
+<tr class="separator:af09217f45a373370cbef1afd0d0ac771"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93f26cb2b8883f4a85dd4e2e6574f858"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="namespacezia_1_1http.html#afe8801ec1e2a9f741ed0278f62a65db0">raw_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classzia_1_1http_1_1_request.html#a93f26cb2b8883f4a85dd4e2e6574f858">format</a> () const </td></tr>
 <tr class="memdesc:a93f26cb2b8883f4a85dd4e2e6574f858"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the raw format.  <a href="#a93f26cb2b8883f4a85dd4e2e6574f858">More...</a><br/></td></tr>
 <tr class="separator:a93f26cb2b8883f4a85dd4e2e6574f858"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -297,6 +303,57 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add a field in HTTP request. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8dab8413efd8a47d8662c632e3a36fcd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacezia_1_1http.html#aa7c32fa5647132c074bcd7a0ef7107cd">body_type</a>&amp; zia::http::Request::body </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the body response. </p>
+
+</div>
+</div>
+<a class="anchor" id="af09217f45a373370cbef1afd0d0ac771"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zia::http::Request::body </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacezia_1_1http.html#aa7c32fa5647132c074bcd7a0ef7107cd">body_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>body</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the response body content. </p>
 
 </div>
 </div>
@@ -561,7 +618,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 19 2014 17:11:40 for API ZIA by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 19 2014 17:50:04 for API ZIA by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>
