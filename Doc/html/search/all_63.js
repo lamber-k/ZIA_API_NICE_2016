@@ -7,5 +7,6 @@ var searchData=
   ['code_5ftype',['code_type',['../classzia_1_1_i_status___code.html#ad3c8bb41b3ab63c3305d469a1ba2649b',1,'zia::IStatus_Code']]],
   ['configuration',['CONFIGURATION',['../namespacezia.html#a18bce688473e499757a33a46eb704a42a8a26a6900ad7a5a4e8b87e9b02d0454b',1,'zia']]],
   ['connected',['CONNECTED',['../namespacezia.html#a6dc43221d43da728b5e6762576b95197ada2cf9af4d6aa08b367e4b6d7aaa1c03',1,'zia']]],
-  ['connection',['CONNECTION',['../namespacezia.html#a18bce688473e499757a33a46eb704a42a9a28a9870e9bb52387e277f5528d11ca',1,'zia']]]
+  ['connection',['CONNECTION',['../namespacezia.html#a18bce688473e499757a33a46eb704a42a9a28a9870e9bb52387e277f5528d11ca',1,'zia']]],
+  ['crlf',['CRLF',['../zia___h_t_t_p__types_8hh.html#a6cb23a858b0a21bdaa644b9181dc415f',1,'zia_HTTP_types.hh']]]
 ];

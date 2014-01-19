@@ -6,12 +6,12 @@
 # include	"zia_HTTP_types.hh"
 
 /*!
- * @file	"zia_HTTP_response.hh"
+ * @file	"zia_HTTP_request.hh"
  * @if french
- * @brief	Décris la classe lié a la réponse HTTP
+ * @brief	Décris la classe lié a la requête HTTP
  *
  * @elseif english
- * @brief	Describe the HTTP response class.
+ * @brief	Describe the HTTP request class.
  *
  * @endif
  *

@@ -2,12 +2,12 @@
 # define	ZIA_ICORE
 
 /*!
- * @file	"zia_IServer_socket.hh"
+ * @file	"zia_ICore.hh"
  * @if french
- * @brief	Décris l'interface de la socket serveur lié au core.
+ * @brief	Décris l'interface du core.
  *
  * @elseif english
- * @brief	Describe the server socket interface linked to the core.
+ * @brief	Describe the Core interface.
  *
  * @endif
  *

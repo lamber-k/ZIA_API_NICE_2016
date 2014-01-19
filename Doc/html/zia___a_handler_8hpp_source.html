@@ -64,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -71,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -90,31 +91,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">zia_AHandler.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<a href="zia___a_handler_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"># include   &quot;zia_IHandler.hh&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="code" href="namespacezia.html">    7</a></span>&#160;<span class="keyword">namespace </span>zia</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="code" href="classzia_1_1_a_handler.html">   19</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classzia_1_1_a_handler.html" title="Abstract handler class.">AHandler</a> : <span class="keyword">public</span> <a class="code" href="classzia_1_1_i_handler.html" title="Zia Handler interface.">zia::IHandler</a></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="classzia_1_1_a_handler.html#a02bb402dba95aa12f2bd5adddcd3f98b">   24</a></span>&#160;    <a class="code" href="classzia_1_1_a_handler.html#a02bb402dba95aa12f2bd5adddcd3f98b" title="AHandler() constructor.">AHandler</a>(<span class="keyword">const</span> <a class="code" href="classzia_1_1_i_module.html" title="Interface for Zia&#39;s Module.">zia::IModule</a> *mod) : _module(mod) {}</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classzia_1_1_a_handler.html" title="Abstract handler class.">AHandler</a>() {};</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="classzia_1_1_a_handler.html#a9edbf8d1c8e1ea1c4ce7b2e35637fb02">   30</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classzia_1_1_i_module.html" title="Interface for Zia&#39;s Module.">IModule</a>           *<a class="code" href="classzia_1_1_a_handler.html#a9edbf8d1c8e1ea1c4ce7b2e35637fb02" title="Module getter implementation.">module</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> (_module);}</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">virtual</span> <span class="keyword">enum</span> <a class="code" href="namespacezia.html#a0beb7fbe0d10ac24cd798e3228c129f5" title="Register a handler with a specific priority level. When you register, you can have some priority leve...">registration_priority</a>  <a class="code" href="classzia_1_1_a_handler.html#a3b4c015705e87e1a6a68dd2dc239fd3e" title="Returns the priority of a handler based on the request passed as a parameter.">priority</a>(<a class="code" href="classzia_1_1_i_message.html" title="Message interface.">IMessage</a>&amp; request) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span>            <a class="code" href="classzia_1_1_a_handler.html#afc2a6c301399e2122e3acea409913c79" title="The core calls this method to process the request with via the current instance of IHandler...">operator()</a>(<a class="code" href="classzia_1_1_i_message.html" title="Message interface.">IMessage</a>&amp;) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">const</span> <a class="code" href="classzia_1_1_i_module.html" title="Interface for Zia&#39;s Module.">zia::IModule</a>  *_module;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  };</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor"># include   &quot;<a class="code" href="zia___i_handler_8hh.html" title="Describe the handler class interface.">zia_IHandler.hh</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="code" href="namespacezia.html">   19</a></span>&#160;<span class="keyword">namespace </span>zia</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="classzia_1_1_a_handler.html">   31</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classzia_1_1_a_handler.html" title="Abstract handler class.">AHandler</a> : <span class="keyword">public</span> <a class="code" href="classzia_1_1_i_handler.html" title="Zia Handler interface.">zia::IHandler</a></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="classzia_1_1_a_handler.html#a02bb402dba95aa12f2bd5adddcd3f98b">   36</a></span>&#160;    <a class="code" href="classzia_1_1_a_handler.html#a02bb402dba95aa12f2bd5adddcd3f98b" title="AHandler() constructor.">AHandler</a>(<span class="keyword">const</span> <a class="code" href="classzia_1_1_i_module.html" title="Interface for Zia&#39;s Module.">zia::IModule</a> *mod) : _module(mod) {}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classzia_1_1_a_handler.html" title="Abstract handler class.">AHandler</a>() {};</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="classzia_1_1_a_handler.html#a9edbf8d1c8e1ea1c4ce7b2e35637fb02">   42</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classzia_1_1_i_module.html" title="Interface for Zia&#39;s Module.">IModule</a>           *<a class="code" href="classzia_1_1_a_handler.html#a9edbf8d1c8e1ea1c4ce7b2e35637fb02" title="Module getter implementation.">module</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> (_module);}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">virtual</span> <span class="keyword">enum</span> <a class="code" href="namespacezia.html#a0beb7fbe0d10ac24cd798e3228c129f5" title="Register a handler with a specific priority level. When you register, you can have some priority leve...">registration_priority</a>  <a class="code" href="classzia_1_1_a_handler.html#a3b4c015705e87e1a6a68dd2dc239fd3e" title="Returns the priority of a handler based on the request passed as a parameter.">priority</a>(<a class="code" href="classzia_1_1_i_message.html" title="Message interface.">IMessage</a>&amp; request) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span>            <a class="code" href="classzia_1_1_a_handler.html#afc2a6c301399e2122e3acea409913c79" title="The core calls this method to process the request with via the current instance of IHandler...">operator()</a>(<a class="code" href="classzia_1_1_i_message.html" title="Message interface.">IMessage</a>&amp;) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">const</span> <a class="code" href="classzia_1_1_i_module.html" title="Interface for Zia&#39;s Module.">zia::IModule</a>  *_module;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  };</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 19 2014 15:55:08 for API ZIA by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 19 2014 16:16:22 for API ZIA by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

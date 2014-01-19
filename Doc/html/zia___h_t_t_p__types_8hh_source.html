@@ -64,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -71,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -95,41 +96,42 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor"># include   &lt;string&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor"># define    CRLF    &quot;\r\n&quot;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># define    SP  &quot; &quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace   </span>zia</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">namespace </span>http</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  {</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="namespacezia_1_1http.html#a94e0618ee0d37aad080e517c7e9666c7">   38</a></span>&#160;    <span class="keyword">typedef</span> std::string <a class="code" href="namespacezia_1_1http.html#a94e0618ee0d37aad080e517c7e9666c7" title="version Typedef.">version_type</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="namespacezia_1_1http.html#a50c589a2603aa6daac16a1c91d915f83">   48</a></span>&#160;    <span class="keyword">typedef</span> std::string <a class="code" href="namespacezia_1_1http.html#a50c589a2603aa6daac16a1c91d915f83" title="uri (Uniform Resource Identifier) Typedef.">uri_type</a>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="namespacezia_1_1http.html#a9dabfac0ccf5387f0096cbd26748cdd7">   62</a></span>&#160;    <span class="keyword">typedef</span> std::string <a class="code" href="namespacezia_1_1http.html#a9dabfac0ccf5387f0096cbd26748cdd7" title="method Typedef.">method_type</a>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="code" href="namespacezia_1_1http.html#a89f27638d6675545c45571c454fa65e4">   72</a></span>&#160;    <span class="keyword">typedef</span> std::string <a class="code" href="namespacezia_1_1http.html#a89f27638d6675545c45571c454fa65e4" title="HTTP return code Typedef.">response_code_type</a>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="code" href="namespacezia_1_1http.html#a5e484a1968cd41910fbd80242e2b54dd">   82</a></span>&#160;    <span class="keyword">typedef</span> std::string <a class="code" href="namespacezia_1_1http.html#a5e484a1968cd41910fbd80242e2b54dd" title="reason phrase Typedef.">reason_phrase_type</a>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="code" href="namespacezia_1_1http.html#aa7c32fa5647132c074bcd7a0ef7107cd">   92</a></span>&#160;    <span class="keyword">typedef</span> std::string <a class="code" href="namespacezia_1_1http.html#aa7c32fa5647132c074bcd7a0ef7107cd" title="body Typedef.">body_type</a>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno"><a class="code" href="namespacezia_1_1http.html#adf7ee71675116982f400c5be248080d1">  102</a></span>&#160;    <span class="keyword">typedef</span> std::string <a class="code" href="namespacezia_1_1http.html#adf7ee71675116982f400c5be248080d1" title="field name Typedef.">field_name_type</a>;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno"><a class="code" href="namespacezia_1_1http.html#aab5877eb919dbf4abcd22099237bdfda">  112</a></span>&#160;    <span class="keyword">typedef</span> std::string <a class="code" href="namespacezia_1_1http.html#aab5877eb919dbf4abcd22099237bdfda" title="field value Typedef.">field_value_type</a>;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno"><a class="code" href="namespacezia_1_1http.html#a10f763387ad1ef6cae96ecddeb77b64f">  122</a></span>&#160;    <span class="keyword">typedef</span> std::map&lt;field_name_type, field_value_type&gt; <a class="code" href="namespacezia_1_1http.html#a10f763387ad1ef6cae96ecddeb77b64f" title="HTTP fields container Typedef.">fields_type</a>;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno"><a class="code" href="namespacezia_1_1http.html#afe8801ec1e2a9f741ed0278f62a65db0">  132</a></span>&#160;    <span class="keyword">typedef</span> std::string <a class="code" href="namespacezia_1_1http.html#afe8801ec1e2a9f741ed0278f62a65db0" title="HTTP fields container Typedef.">raw_type</a>;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  }</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ZIA_HTTP_TYPES_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="zia___h_t_t_p__types_8hh.html#a6cb23a858b0a21bdaa644b9181dc415f">   26</a></span>&#160;<span class="preprocessor"># define    CRLF    &quot;\r\n&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="zia___h_t_t_p__types_8hh.html#aecd69d9a67487cc45c38eb184c50538a">   36</a></span>&#160;<span class="preprocessor"># define    SP  &quot; &quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">namespace   </span>zia</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">namespace </span>http</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  {</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="code" href="namespacezia_1_1http.html#a94e0618ee0d37aad080e517c7e9666c7">   55</a></span>&#160;    <span class="keyword">typedef</span> std::string <a class="code" href="namespacezia_1_1http.html#a94e0618ee0d37aad080e517c7e9666c7" title="version Typedef.">version_type</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="code" href="namespacezia_1_1http.html#a50c589a2603aa6daac16a1c91d915f83">   65</a></span>&#160;    <span class="keyword">typedef</span> std::string <a class="code" href="namespacezia_1_1http.html#a50c589a2603aa6daac16a1c91d915f83" title="uri (Uniform Resource Identifier) Typedef.">uri_type</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="code" href="namespacezia_1_1http.html#a9dabfac0ccf5387f0096cbd26748cdd7">   79</a></span>&#160;    <span class="keyword">typedef</span> std::string <a class="code" href="namespacezia_1_1http.html#a9dabfac0ccf5387f0096cbd26748cdd7" title="method Typedef.">method_type</a>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="code" href="namespacezia_1_1http.html#a89f27638d6675545c45571c454fa65e4">   89</a></span>&#160;    <span class="keyword">typedef</span> std::string <a class="code" href="namespacezia_1_1http.html#a89f27638d6675545c45571c454fa65e4" title="HTTP return code Typedef.">response_code_type</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="code" href="namespacezia_1_1http.html#a5e484a1968cd41910fbd80242e2b54dd">   99</a></span>&#160;    <span class="keyword">typedef</span> std::string <a class="code" href="namespacezia_1_1http.html#a5e484a1968cd41910fbd80242e2b54dd" title="reason phrase Typedef.">reason_phrase_type</a>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="code" href="namespacezia_1_1http.html#aa7c32fa5647132c074bcd7a0ef7107cd">  109</a></span>&#160;    <span class="keyword">typedef</span> std::string <a class="code" href="namespacezia_1_1http.html#aa7c32fa5647132c074bcd7a0ef7107cd" title="body Typedef.">body_type</a>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="code" href="namespacezia_1_1http.html#adf7ee71675116982f400c5be248080d1">  119</a></span>&#160;    <span class="keyword">typedef</span> std::string <a class="code" href="namespacezia_1_1http.html#adf7ee71675116982f400c5be248080d1" title="field name Typedef.">field_name_type</a>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="code" href="namespacezia_1_1http.html#aab5877eb919dbf4abcd22099237bdfda">  129</a></span>&#160;    <span class="keyword">typedef</span> std::string <a class="code" href="namespacezia_1_1http.html#aab5877eb919dbf4abcd22099237bdfda" title="field value Typedef.">field_value_type</a>;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="code" href="namespacezia_1_1http.html#a10f763387ad1ef6cae96ecddeb77b64f">  139</a></span>&#160;    <span class="keyword">typedef</span> std::map&lt;field_name_type, field_value_type&gt; <a class="code" href="namespacezia_1_1http.html#a10f763387ad1ef6cae96ecddeb77b64f" title="HTTP fields container Typedef.">fields_type</a>;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="code" href="namespacezia_1_1http.html#afe8801ec1e2a9f741ed0278f62a65db0">  149</a></span>&#160;    <span class="keyword">typedef</span> std::string <a class="code" href="namespacezia_1_1http.html#afe8801ec1e2a9f741ed0278f62a65db0" title="HTTP fields container Typedef.">raw_type</a>;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  }</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;}</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ZIA_HTTP_TYPES_H_ */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 19 2014 15:55:08 for API ZIA by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 19 2014 16:16:22 for API ZIA by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

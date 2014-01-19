@@ -18,10 +18,13 @@
 namespace	zia
 {
 
+  /*!	@brief http Namespace
+   */
   namespace	http
   {
     class	Request;
     class	Response;
+    class	ISocket_info;
   }
 
   /*!
@@ -48,7 +51,7 @@ namespace	zia
      * @endif
      *
      */
-    virtual http::Request	&request() const = 0;
+    virtual http::Request	&request() = 0;
 
     /*!
      *
@@ -61,7 +64,7 @@ namespace	zia
      * @endif
      *
      */
-    virtual http::Response	&response() const = 0;
+    virtual http::Response	&response() = 0;
 
     /*!
      *
@@ -74,7 +77,7 @@ namespace	zia
      * @endif
      *
      */
-    virtual ISocket_info	&socket_info() const = 0;
+    virtual ISocket_info	&socket_info() = 0;
   };
 }
 

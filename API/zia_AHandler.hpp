@@ -1,5 +1,17 @@
 #pragma	once
 
+/*!
+ * @file	"zia_AHandler.hpp"
+ * @if french
+ * @brief	Décris la classe d'implémentation des handler(s)
+ *
+ * @elseif english
+ * @brief	Describe the handler class implementation.
+ *
+ * @endif
+ *
+ */
+
 # include	"zia_IHandler.hh"
 
 /*!	@brief zia Namespace

@@ -15,7 +15,24 @@
  *
  */
 
+/*!	@if french
+ *	@brief		Définition d'un retour à la ligne comme décris dans la RFC 2616.
+ *
+ *	@elseif english
+ *	@brief		Carriage return as described in RFC 2616.
+ *
+ *	@endif
+ */
 # define	CRLF	"\r\n"
+
+/*!	@if french
+ *	@brief		Définition d'un espace comme décris dans la RFC 2616.
+ *
+ *	@elseif english
+ *	@brief		Space as described in RFC 2616.
+ *
+ *	@endif
+ */
 # define	SP	" "
 
 /*!	@brief zia Namespace

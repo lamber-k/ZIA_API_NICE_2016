@@ -64,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -71,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -90,8 +91,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">zia_HTTP_response.hh</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="zia___h_t_t_p__response_8hh.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;7#ifndef ZIA_HTTP_RESPONSE_H_</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"># define ZIA_HTTP_RESPONSE_H_</span></div>
+<a href="zia___h_t_t_p__response_8hh.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef ZIA_HTTP_RESPONSE_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># define ZIA_HTTP_RESPONSE_H_</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor"># include   &quot;<a class="code" href="zia___h_t_t_p__types_8hh.html" title="HTTP request and responses types.">zia_HTTP_types.hh</a>&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
@@ -189,7 +190,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="keyword">      </span>{</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    std::stringstream   output;</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    output &lt;&lt; _version &lt;&lt; SP &lt;&lt; _code &lt;&lt; SP &lt;&lt; _reason_phrase &lt;&lt; CRLF;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    output &lt;&lt; _version &lt;&lt; <a class="code" href="zia___h_t_t_p__types_8hh.html#aecd69d9a67487cc45c38eb184c50538a" title="Space as described in RFC 2616.">SP</a> &lt;&lt; _code &lt;&lt; <a class="code" href="zia___h_t_t_p__types_8hh.html#aecd69d9a67487cc45c38eb184c50538a" title="Space as described in RFC 2616.">SP</a> &lt;&lt; _reason_phrase &lt;&lt; <a class="code" href="zia___h_t_t_p__types_8hh.html#a6cb23a858b0a21bdaa644b9181dc415f" title="Carriage return as described in RFC 2616.">CRLF</a>;</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keywordflow">for</span> (fields_type::const_iterator it = _fields.begin(); it != _fields.end(); ++it)</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;      output &lt;&lt; it-&gt;first &lt;&lt; <span class="charliteral">&#39;:&#39;</span> &lt;&lt; it-&gt;second &lt;&lt; CRLF;</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    output &lt;&lt; CRLF &lt;&lt; _body;</div>
@@ -211,7 +212,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 19 2014 15:55:08 for API ZIA by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 19 2014 16:16:22 for API ZIA by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

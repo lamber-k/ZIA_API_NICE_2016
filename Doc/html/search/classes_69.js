@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['iconnection_5finfo',['IConnection_info',['../classzia_1_1_i_connection__info.html',1,'zia']]],
   ['icore',['ICore',['../classzia_1_1_i_core.html',1,'zia']]],
   ['ihandler',['IHandler',['../classzia_1_1_i_handler.html',1,'zia']]],
   ['imessage',['IMessage',['../classzia_1_1_i_message.html',1,'zia']]],

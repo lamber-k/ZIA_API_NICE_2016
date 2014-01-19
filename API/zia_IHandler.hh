@@ -2,6 +2,18 @@
 #ifndef		ZIA_IHANDLER
 #define		ZIA_IHANDLER
 
+/*!
+ * @file	"zia_IHandler.hh"
+ * @if french
+ * @brief	Décris la classe interface des handler(s)
+ *
+ * @elseif english
+ * @brief	Describe the handler class interface.
+ *
+ * @endif
+ *
+ */
+
 # include	"zia_registration.hh"
 
 namespace zia

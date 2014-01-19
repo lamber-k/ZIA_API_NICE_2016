@@ -111,18 +111,22 @@ namespace zia
     {
       CONFIGURATION,
       /*!< @if french
-       * @brief	Hook pour les configurations 
+       * @brief	Hook pour les configurations
        *
        * @elseif english
        * @brief Hook to pre-request configurations
+       *
+       * @endif
        */
 
       CONNECTION,
       /*!< @if french
-       * @brief	Hook pour le etat connection	
+       * @brief	Hook pour le etat connection
        *
        * @elseif english
        * @brief Hook for handling connection states
+       *
+       * @endif
        */
 
       AUTHENTIFICATION,
@@ -131,6 +135,8 @@ namespace zia
        *
        * @elseif english
        * @brief Hook for authenticating a connection
+       *
+       * @endif
        */
 
       HEADER_PARSE,
@@ -139,14 +145,18 @@ namespace zia
        *
        * @elseif english
        * @brief Hook for parsing the HTTP header
+       *
+       * @endif
        */
-      
+
       BODY_HANDLER,
       /*!< @if french
        * @brief	Hook pour le parseur du body HTTP
        *
        * @elseif english
        * @brief Hook for parsing the HTTP body
+       *
+       * @endif
        */
 
       CGI_HANDLER,
@@ -155,6 +165,8 @@ namespace zia
        *
        * @elseif english
        * @brief Hook for all CGI Modules
+       *
+       * @endif
        */
 
       RESPONSE,
@@ -163,6 +175,8 @@ namespace zia
        *
        * @elseif english
        * @brief Hook for the response state
+       *
+       * @endif
        */
 
       LOGGER
@@ -171,6 +185,8 @@ namespace zia
        *
        * @elseif english
        * @brief Hook handler as a logger
+       *
+       * @endif
        */
     };
 }

@@ -64,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -71,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -112,11 +113,11 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a6cb23a858b0a21bdaa644b9181dc415f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6cb23a858b0a21bdaa644b9181dc415f"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>CRLF</b>&#160;&#160;&#160;&quot;\r\n&quot;</td></tr>
+<tr class="memitem:a6cb23a858b0a21bdaa644b9181dc415f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zia___h_t_t_p__types_8hh.html#a6cb23a858b0a21bdaa644b9181dc415f">CRLF</a>&#160;&#160;&#160;&quot;\r\n&quot;</td></tr>
+<tr class="memdesc:a6cb23a858b0a21bdaa644b9181dc415f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Carriage return as described in RFC 2616.  <a href="#a6cb23a858b0a21bdaa644b9181dc415f">More...</a><br/></td></tr>
 <tr class="separator:a6cb23a858b0a21bdaa644b9181dc415f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecd69d9a67487cc45c38eb184c50538a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aecd69d9a67487cc45c38eb184c50538a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SP</b>&#160;&#160;&#160;&quot; &quot;</td></tr>
+<tr class="memitem:aecd69d9a67487cc45c38eb184c50538a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zia___h_t_t_p__types_8hh.html#aecd69d9a67487cc45c38eb184c50538a">SP</a>&#160;&#160;&#160;&quot; &quot;</td></tr>
+<tr class="memdesc:aecd69d9a67487cc45c38eb184c50538a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Space as described in RFC 2616.  <a href="#aecd69d9a67487cc45c38eb184c50538a">More...</a><br/></td></tr>
 <tr class="separator:aecd69d9a67487cc45c38eb184c50538a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -156,10 +157,39 @@ field_value_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a clas
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>HTTP request and responses types. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a6cb23a858b0a21bdaa644b9181dc415f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CRLF&#160;&#160;&#160;&quot;\r\n&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Carriage return as described in RFC 2616. </p>
+
+</div>
+</div>
+<a class="anchor" id="aecd69d9a67487cc45c38eb184c50538a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SP&#160;&#160;&#160;&quot; &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Space as described in RFC 2616. </p>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 19 2014 15:55:08 for API ZIA by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 19 2014 16:16:22 for API ZIA by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>
