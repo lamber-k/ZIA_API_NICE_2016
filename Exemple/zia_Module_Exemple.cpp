@@ -13,7 +13,7 @@ Zia_Module_Exemple::Zia_Module_Exemple()
 void	Zia_Module_Exemple::register_handlers(zia::ICore &core)
 {
   core.register_server_socket(new Server(core));
-  core.register_request_state(Handler(this), zia::HEADER_PARSER);
+  core.register_request_state(Handler(this), zia::HEADER_PARSE);
 }
 
 Zia_Module_Exemple::Server::Server(zia::ICore &core) :

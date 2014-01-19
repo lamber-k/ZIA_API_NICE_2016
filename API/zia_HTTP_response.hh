@@ -201,7 +201,7 @@ namespace	zia
        *	@brief		Retourne la "reason_phrase" de la réponse.
        *
        *	@elseif english
-       *	@brief		Get the reason phrase URI.
+       *	@brief		Get the reason phrase response.
        *
        *	@endif
        */
