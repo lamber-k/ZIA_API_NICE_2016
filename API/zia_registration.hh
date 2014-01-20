@@ -109,22 +109,12 @@ namespace zia
 
   enum Signal
     {
-      CONFIGURATION,
+      HEADER_PARSE,
       /*!< @if french
-       * @brief	Hook pour les configurations
+       * @brief	Hook pour le parseur du header HTTP
        *
        * @elseif english
-       * @brief Hook to pre-request configurations
-       *
-       * @endif
-       */
-
-      CONNECTION,
-      /*!< @if french
-       * @brief	Hook pour le etat connection
-       *
-       * @elseif english
-       * @brief Hook for handling connection states
+       * @brief Hook for parsing the HTTP header
        *
        * @endif
        */
@@ -134,19 +124,18 @@ namespace zia
        * @brief	Hook pour le etat authentification
        *
        * @elseif english
-       * @brief Hook for authenticating a connection
+       * @brief Hook for authentifications
        *
        * @endif
        */
 
-      HEADER_PARSE,
+      URL_HANDLER,
       /*!< @if french
-       * @brief	Hook pour le parseur du header HTTP
+       * @brief Hook pour gestion des URL ex. redirections ..
        *
        * @elseif english
-       * @brief Hook for parsing the HTTP header
+       * @brief Hook for handling URL's eg. redirections, URL corrections
        *
-       * @endif
        */
 
       BODY_HANDLER,
